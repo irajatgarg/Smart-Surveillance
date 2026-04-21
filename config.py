@@ -1,0 +1,9 @@
+# config.py
+
+FRAME_WIDTH = 640
+FRAME_HEIGHT = 480
+
+MOTION_THRESHOLD = 25
+MIN_CONTOUR_AREA = 500
+
+WINDOW_NAME = "AI Surveillance System"
