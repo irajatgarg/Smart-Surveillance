@@ -1,7 +1,7 @@
 # main.py
 
 import cv2
-from modules.person_detector import PersonDetector
+from modules.yolo_detector import YOLODetector
 import winsound
 import time
 from modules.video_input import VideoInput
@@ -13,7 +13,7 @@ from modules.output import OutputHandler
 
 def main():
     video = VideoInput(0)
-    detector = PersonDetector()
+    detector = YOLODetector()
     last_alert_time = 0
     prev_frame = None
 
