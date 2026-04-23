@@ -12,7 +12,7 @@ class FeatureExtractor:
             return [], curr_frame
 
         diff = cv2.absdiff(prev_frame, curr_frame)
-        _, thresh = cv2.threshold(diff, 25, 255, cv2.THRESH_BINARY)
+        _, thresh = cv2.threshold(diff, 12, 255, cv2.THRESH_BINARY)
 
         contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
