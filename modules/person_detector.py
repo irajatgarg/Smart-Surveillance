@@ -6,10 +6,10 @@ class PersonDetector:
         self.hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
     def detect(self, frame):
-        boxes, _ = self.hog.detectMultiScale(
+        boxes, weights = self.hog.detectMultiScale(
             frame,
             winStride=(8, 8),
-            padding=(8, 8),
+            padding=(16, 16),
             scale=1.05
         )
         return boxes
