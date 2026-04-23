@@ -212,7 +212,7 @@ It avoids heavy ML models while maintaining the **structure and behavior of inte
 
 ## 👨‍💻 Author
 
-**Rachit Garg**
+**Rajat Krishan Garg**
 
 ---
 
